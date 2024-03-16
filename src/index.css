@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Open Sans';
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #D11242;
+        border-radius: 10px;
+    }
+}
+
+@layer utilities {
+    .max-width-container {
+        @apply w-full flex justify-center;
+    }
+
+    .main-width-container {
+        @apply w-[375px]  md:w-[768px]  lg:w-[1728px] px-4 md:px-20 lg:px-40;
+    }
+
+    .navbar-container {
+        @apply h-[64px] md:h-[76px] lg:h-[100px] flex justify-between items-center border-b-[0.8px] border-gray-500;
+    }
+
+    .logo-container {
+        @apply w-[116px] h-[32px] md:w-[117px] md:h-[32px] lg:w-[176px] lg:h-[44px];
+    }
+
+    .menu-logo-container {
+        @apply w-[24px] h-[24px] md:w-[28px] md:h-[28px] inline-block cursor-pointer lg:hidden;
+    }
+
+    .padding-container {
+        @apply py-[12px] md:py-[16px] lg:py-[28px];
+    }
+
+}

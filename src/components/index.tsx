@@ -1,0 +1,11 @@
+export { default as Hero } from './Hero/Hero';
+export { default as About } from './About/About';
+export { default as Accommodation } from './Accommodation/Accommodation';
+export { default as Facilities } from './Facilities/Facilities';
+export { default as Offers } from './Offers/Offers';
+export { default as Dining } from './Dining/Dining';
+export { default as Banquet } from './Banquet/Banquets';
+export { default as Explore } from './Explore/Explore';
+export { default as Deliver } from './Deliver/Deliver';
+export { default as Testimonials } from './Testimonials/Testimonials';
+export { default as Footer } from './Footer/Footer';
