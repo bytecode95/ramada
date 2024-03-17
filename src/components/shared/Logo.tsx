@@ -1,5 +1,5 @@
 import { LogoProps } from "../../types/types";
-import logoImage from "../../assets/images/Logo.png";
+import logoImage from "/images/Logo.png";
 
 export default function Logo({height, width, handleClick}:LogoProps) {
     return (
