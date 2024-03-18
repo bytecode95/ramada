@@ -1,11 +1,38 @@
+import React, { useState, useEffect } from 'react';
 import { NAV_LINKS } from "../../constants";
 import Logo from "../shared/Logo";
 import Button from "../shared/Button";
 import { HashLink } from 'react-router-hash-link';
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.getElementById('hero');
+      if (!heroSection) return;
+  
+      const heroOffsetTop = heroSection.offsetTop;
+      const heroOffsetBottom = heroOffsetTop + heroSection.offsetHeight;
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      if (scrollPosition > heroOffsetBottom) {
+        setScrolled(true);
+      } else if (scrollPosition >= heroOffsetTop && scrollPosition <= heroOffsetBottom - windowHeight) {
+        setScrolled(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className={`max-width-container sticky top-0 z-50 ${scrolled ? 'bg-black' : 'bg-transparent'}`}>
       <div className="main-width-container navbar-container flex justify-between items-center">
         <div className="logo-container flex items-center">
           <Logo height={57} width={207} />
@@ -31,8 +58,8 @@ function Navbar() {
             />
           </div>
         </div>
-        <div className="2xl:hidden flex items-center ">
-          <img src="/images/menu-white.png" alt="icon" width={40}  height={40}/>
+        <div className="2xl:hidden flex items-center">
+          <img src="/images/menu-white.png" alt="icon" width={40} height={40} />
         </div>
       </div>
     </nav>
