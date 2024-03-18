@@ -6,6 +6,7 @@ import FOOTERIMG1 from '/images/wyndham.png'
 import FOOTERIMG2 from '/images/wyndham2.png'
 import FOOTERIMG3 from '/images/wyndham3.png'
 import SocialButton from "../shared/SocialButton"
+import { HashLink } from 'react-router-hash-link';
 
 
 function Footer() {
@@ -44,13 +45,13 @@ function Footer() {
                         {value.links.map((link, linkIndex) => (
                           <li key={linkIndex}>
                             {link.type === 'email' ? (
-                              <Link to={link.url}>{link.name}</Link>
+                              <HashLink to={link.url} scroll={(element) => element.scrollIntoView({ behavior: 'smooth'})}>{link.name}</HashLink>
                             ) : link.type === 'tel' ? (
-                              <Link to={link.url}>{link.name}</Link>
+                              <HashLink to={link.url} scroll={(element) => element.scrollIntoView({ behavior: 'smooth'})}>{link.name}</HashLink>
                             ) : typeof link === 'string' ? (
                               link
                             ) : link.type === 'internal' ? (
-                              <Link to={link.url}>{link.name}</Link>
+                              <HashLink to={link.url} scroll={(element) => element.scrollIntoView({ behavior: 'smooth'})}>{link.name}</HashLink>
                             ) : link.type === 'external' && (
                               <Link to={link.url} target="_blank" rel="noopener noreferrer">
                                 {link.name}
