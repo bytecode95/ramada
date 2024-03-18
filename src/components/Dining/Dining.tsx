@@ -9,7 +9,7 @@ function Dining() {
           <h3 className="section-header-text">Wine & Dine</h3>
           <h1 className="section-topic-text">Ramada Colombo Restaurants</h1>
         </header>
-        <div className="grid grid-cols-3 gap-4 md:gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 md:gap-6 2xl:gap-8 mt-8">
           {DINERS.map((diner, index) => (
             <div key={index} className="relative shadow-xl rounded-lg" >
               <img src={diner.src} alt={diner.alt} width={448} height={305} />

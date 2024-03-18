@@ -11,9 +11,9 @@ function Accommodation() {
             <h3 className="section-header-text">Accommodation</h3>
             <h1 className="section-topic-text">Comfortable Rooms Just For You </h1>
           </header>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 lg:gap-4 mt-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-2 md:gap-3 2xl:gap-4 mt-8 ">
             {ACCOMMODATION.map((value, index) => (
-              <article key={index} className="justify-self-start">
+              <article key={index} className="justify-self-center">
                 <div className="w-full p-4 bg-white custom-shadow-card rounded-md">
                   <div className="rounded-2xl shadow-lg">
                     <img
