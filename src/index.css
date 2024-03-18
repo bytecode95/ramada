@@ -14,19 +14,16 @@
   html {
     scroll-behavior: smooth;
   }
-
-  /* width */
+  
   ::-webkit-scrollbar {
     width: 8px;
   }
 
-  /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
 
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #d11242;
     border-radius: 10px;
