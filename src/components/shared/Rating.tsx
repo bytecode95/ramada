@@ -1,11 +1,7 @@
 import { useState } from 'react';
+import { RatingProps } from '../../types/types';
 
-interface RatingProps {
-  maxRating: number;
-  rating: number; 
-  readOnly?: boolean;
-  size?: string; 
-}
+
 
 function Rating({ maxRating, rating, readOnly, size }: RatingProps) {
   const [currentRating, setCurrentRating] = useState(rating);
