@@ -37,7 +37,7 @@ const Selector: React.FC<SelectorProps> = ({
                     max={10}
                     value={adults}
                     onChange={(e) => setAdults(parseInt(e.target.value))}
-                    className="block w-20 md:w-40 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none  focus:border-b-pink-500"
+                    className="block w-20 xl:w-40 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none  focus:border-b-pink-500"
                 />
             </div>
             <div className="mr-4">
@@ -48,7 +48,7 @@ const Selector: React.FC<SelectorProps> = ({
                     max={10}
                     value={children}
                     onChange={(e) => setChildren(parseInt(e.target.value))}
-                    className="block w-20 md:w-40 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-b-pink-500"
+                    className="block w-20 xl:w-40 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-b-pink-500"
                 />
             </div>
             <div className="mr-4 relative">
@@ -56,7 +56,7 @@ const Selector: React.FC<SelectorProps> = ({
                     placeholderText='Check-in'
                     selected={checkInDate}
                     onChange={(date) => setCheckInDate(date)}
-                    className="block w-24 md:w-48 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-pink-500"
+                    className="block w-24 xl:w-48 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-pink-500"
                 />
                 <FaCalendarAlt className="absolute top-0 right-3 mt-5 text-pink-500" />
             </div>
@@ -65,7 +65,7 @@ const Selector: React.FC<SelectorProps> = ({
                     placeholderText='Check-out'
                     selected={checkOutDate}
                     onChange={(date) => setCheckOutDate(date)}
-                    className="block w-24 md:w-48 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-pink-500"
+                    className="block w-24 xl:w-48 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-pink-500"
                 />
                  <FaCalendarAlt className="absolute top-0 right-3 mt-5 text-pink-500" />
             </div>

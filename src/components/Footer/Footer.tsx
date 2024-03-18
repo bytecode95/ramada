@@ -32,7 +32,7 @@ function Footer() {
                   <div className="footer-text-3">
                     {value.title === 'RAMADA BY WYNDHAM COLOMBO' && (
                       <div>
-                        <div className="mb-4 lg:w-3/4 flex flex-col justify-between">
+                        <div className="mb-4 w-3/4 flex flex-col justify-between">
                           <p className="footer-text-3">
                             Owned and managed by Alhambra HotelsLtd, under license from Ramada Worldwide
                           </p>
@@ -82,7 +82,7 @@ function Footer() {
                     )}
                     {value.title === 'RAMADA BY WYNDHAM COLOMBO' && (
                       <div>
-                        <div className="mb-4 lg:w-3/4 flex flex-col justify-between">
+                        <div className="mb-4 w-3/4 flex flex-col justify-between">
                           <div className="mt-4">
                             {FOOTER_SOCIAL.map((social, index) => (
                               <div key={index} className="flex items-center">
