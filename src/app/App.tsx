@@ -6,17 +6,17 @@ function App() {
 
   return (
     <>
-      <Hero/>
-      <About/>
-      <Accommodation/>
-      <Facilities/>
-      <Offers/>
-      <Dining/>
-      <Banquet/>
-      <Explore/>
-      <Deliver/>
-      <Testimonials/>
-      <Footer/>
+      <Hero />
+      <About />
+      <Accommodation />
+      <Facilities />
+      <Offers />
+      <Dining />
+      <Banquet />
+      <Explore />
+      <Deliver />
+      <Testimonials />
+      <Footer />
     </>
   )
 }
