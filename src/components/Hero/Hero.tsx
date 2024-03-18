@@ -21,7 +21,7 @@ function Hero() {
         />
       </div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
-      <div className="absolute top-[150px] 2xl:top-[300px] 2xl:left-[16%] left-[10%] text-white md:w-[700px] 2xl:w-[825px] text-left">
+      <div className="absolute top-[150px] 2xl:top-[300px] 2xl:left-[16%] left-[10%] text-white w-[400px] md:w-[700px] 2xl:w-[825px] text-left">
         <h1 className="hero-text-main">{title}</h1>
         <p className="hero-text-description">{description}</p>
       </div>

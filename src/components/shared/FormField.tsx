@@ -18,9 +18,9 @@ const FormField: React.FC<SubscriptionFormProps> = ({ onSubmit }) => {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="border border-gray-300 px-10 py-4  w-[925px]"
+                className="border border-gray-300 px-10 py-[10px] xl:py-4 w-[300px] md:w-[500px] xl:w-[925px]"
             />
-            <div className='absolute right-40 top-0 h-full'>
+            <div className='absolute right-4 md:right-24 xl:right-60 top-0'>
                 <Button
                     type="submit"
                     title="Get In Touch"

@@ -21,9 +21,11 @@ function Footer() {
           <div className="flex justify-center">
             <Logo height={94} width={334} />
           </div>
+          <div className="flex justify-center">
           <FormField onSubmit={handleSubscribe} />
-          <div className="flex justify-between mt-10">
-            <div className="w-[60%] flex justify-between">
+          </div>
+          <div className="flex justify-between mt-10 flex-wrap ">
+            <div className="w-full 2xl:w-[60%] flex justify-around mx-auto">
               {FOOTER_LINKS.map((value, index) => (
                 <article key={index}>
                   <div className="flex items-center mb-2">
@@ -32,7 +34,7 @@ function Footer() {
                   <div className="footer-text-3">
                     {value.title === 'RAMADA BY WYNDHAM COLOMBO' && (
                       <div>
-                        <div className="mb-4 w-3/4 flex flex-col justify-between">
+                        <div className="mb-4  w-3/4 flex flex-col justify-between">
                           <p className="footer-text-3">
                             Owned and managed by Alhambra HotelsLtd, under license from Ramada Worldwide
                           </p>
@@ -82,7 +84,7 @@ function Footer() {
                     )}
                     {value.title === 'RAMADA BY WYNDHAM COLOMBO' && (
                       <div>
-                        <div className="mb-4 w-3/4 flex flex-col justify-between">
+                        <div className="mb-4  w-3/4 flex flex-col justify-between">
                           <div className="mt-4">
                             {FOOTER_SOCIAL.map((social, index) => (
                               <div key={index} className="flex items-center">
@@ -99,10 +101,10 @@ function Footer() {
                 </article>
               ))}
             </div>
-            <div className="flex flex-col justify-start items-center">
+            <div className="flex flex-col justify-start items-center mx-auto">
               <div className="flex items-center justify-between">
-                <img src={FOOTERIMG3} width={188} className="mx-4" />
-                <img src={FOOTERIMG2} width={188} className="mx-4" />
+                <img src={FOOTERIMG3} width={188} className="mx-4" style={{width:'auto' , height:'auto'}}/>
+                <img src={FOOTERIMG2} width={188} className="mx-4" style={{width:'auto' , height:'auto'}}/>
               </div>
               <img src={FOOTERIMG1} className="my-4" />
             </div>

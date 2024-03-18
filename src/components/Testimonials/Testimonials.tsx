@@ -5,7 +5,7 @@ import Rating from "../shared/Rating"
 function Testimonials() {
   return (
     <section className="max-width-container" id="blog">
-      <div className="main-feedback-container py-20">
+      <div className="main-feedback-container py-20 ">
         <header className="text-center">
           <h3 className="section-header-text pb-20">Testimonials</h3>
         </header>
