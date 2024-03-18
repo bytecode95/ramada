@@ -22,7 +22,7 @@ function Deliver() {
               />
             </div>
           </div>
-          <div className="">
+          <div className="mt-5 mx-auto 2xl:mt-0 2xl:mx-0">
             <img
               src='/images/Delivery.png'
               width={560}
