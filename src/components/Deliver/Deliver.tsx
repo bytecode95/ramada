@@ -5,8 +5,8 @@ function Deliver() {
   return (
     <section className="max-width-container" id="delivery">
       <div className="main-width-container padding-container">
-        <div className="flex justify-between items-center flex-wrap-reverse">
-          <div className="w-full lg:w-1/2">
+        <div className="flex justify-between items-center flex-wrap">
+          <div className="w-full 2xl:w-1/2">
             <h4 className="section-header-text">Delivery & Takeaway service</h4>
             <h1 className="section-topic-text">Giving your hunger a safer, faster and better alternative</h1>
             <p className="section-desc-text text-start mt-4">
@@ -20,7 +20,7 @@ function Deliver() {
               variant="btn_Buy_Now"
             />
           </div>
-          <div className="mx-auto mt-5 md:mx-0">
+          <div className="mx-auto mt-5">
             <img
               src='/images/Delivery.png'
               width={500}
