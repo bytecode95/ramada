@@ -7,7 +7,7 @@ function Hero() {
 
   return (
     <section className="max-width-container bg-cover bg-center relative hero-img-container">
-      <div className="w-full bg-black">
+      <div className="w-full">
         <img
           src={HeroImage}
           alt="hero-bg-img"
@@ -19,7 +19,7 @@ function Hero() {
       <div className="absolute top-0">
         <Navbar />
       </div>
-      <div className="absolute top-[300px] lg:left-[16%] left-[10%] text-white xl:w-[825px] text-left">
+      <div className="absolute top-[300px] 2xl:left-[16%] left-[10%] text-white md:w-[700px] 2xl:w-[825px] text-left">
         <h1 className="hero-text-main">{title}</h1>
         <p className="hero-text-description">{description}</p>
       </div>

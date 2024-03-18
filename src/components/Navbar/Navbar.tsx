@@ -6,23 +6,23 @@ import Button from "../shared/Button";
 function Navbar() {
   return (
     <nav className="sticky top-0 z-50">
-      <div className="navbar-container padding-container flex justify-between items-center">
-        <div className="lg:mr-40 logo-container flex items-center">
+      <div className="main-width-container navbar-container flex justify-between items-center">
+        <div className="logo-container flex items-center">
           <Logo height={57} width={207} />
         </div>
-        <div className="hidden lg:flex items-center gap-16">
-          <ul className="flex gap-16">
+        <div className="hidden 2xl:flex items-center md:gap-8 2xl:gap-12">
+          <ul className="flex md:gap-8 2xl:gap-12">
             {NAV_LINKS.map((link) => (
               <Link
                 to={link.href}
                 key={link.key}
-                className="text-white flex items-center cursor-pointer text-base font-normal leading-5"
+                className="text-white flex items-center cursor-pointer text-xs md:text-sm 2xl:text-base font-normal leading-5"
               >
                 {link.label}
               </Link>
             ))}
           </ul>
-          <div className="hidden lg:flex">
+          <div className="hidden 2xl:flex">
             <Button
               type="button"
               title="Contact"
@@ -30,8 +30,8 @@ function Navbar() {
             />
           </div>
         </div>
-        <div className="lg:hidden flex items-center">
-          <img src="/icons/view-list.svg" alt="icon" className="text-white"/>
+        <div className="2xl:hidden flex items-center ">
+          <img src="/images/menu-white.png" alt="icon" width={40}  height={40}/>
         </div>
       </div>
     </nav>
