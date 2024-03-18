@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { NAV_LINKS } from "../../constants";
 import Logo from "../shared/Logo";
 import Button from "../shared/Button";
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar() {
   return (
@@ -13,13 +13,14 @@ function Navbar() {
         <div className="hidden 2xl:flex items-center md:gap-8 2xl:gap-12">
           <ul className="flex md:gap-8 2xl:gap-12">
             {NAV_LINKS.map((link) => (
-              <Link
+              <HashLink
                 to={link.href}
                 key={link.key}
+                scroll={(element) => element.scrollIntoView({ behavior: 'smooth'})}
                 className="text-white flex items-center cursor-pointer text-xs md:text-sm 2xl:text-base font-normal leading-5"
               >
                 {link.label}
-              </Link>
+              </HashLink>
             ))}
           </ul>
           <div className="hidden 2xl:flex">
