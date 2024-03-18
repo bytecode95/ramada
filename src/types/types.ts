@@ -29,3 +29,18 @@ export type SocialButtonProps = {
   name: string;
   url: string;
 };
+
+export type SelectorProps = {
+  adults: number;
+  children: number;
+  checkInDate: Date | null;
+  checkOutDate: Date | null;
+  onSearch: (data: SelectorData) => void;
+}
+
+export type SelectorData = {
+  adults: number;
+  children: number;
+  checkInDate: Date | null;
+  checkOutDate: Date | null;
+}
