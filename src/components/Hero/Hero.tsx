@@ -1,12 +1,13 @@
 import HeroImage from "/images/HeroImg.png";
 import { HERO } from "../../constants";
 import Selector from "../shared/Selector";
+import { SelectorData } from "../../types/types";
 
 
-function Hero() {
+function Hero(searchData:SelectorData) {
   const { title, description } = HERO[0];
   
-  const handleSearch = (searchData) => {
+  const handleSearch = (searchData: SelectorData) => {
     console.log("Search data:", searchData);
   };
 
@@ -26,7 +27,7 @@ function Hero() {
         <p className="hero-text-description">{description}</p>
       </div>
       <div className="absolute top-[450px] 2xl:top-[750px]">
-        <Selector onSearch={handleSearch} />
+        <Selector onSearch={handleSearch} adults={searchData.adults} children={searchData.adults} checkInDate={searchData.checkInDate} checkOutDate={searchData.checkOutDate} />
       </div>
     </section>
   )

@@ -14,8 +14,8 @@ const Selector: React.FC<SelectorProps> = ({
 }) => {
     const [adults, setAdults] = useState<number>(initialAdults);
     const [children, setChildren] = useState<number>(initialChildren);
-    const [checkInDate, setCheckInDate] = useState<Date | null>(initialCheckInDate);
-    const [checkOutDate, setCheckOutDate] = useState<Date | null>(initialCheckOutDate);
+    const [checkInDate, setCheckInDate] = useState<Date | null>(initialCheckInDate || null);
+    const [checkOutDate, setCheckOutDate] = useState<Date | null>(initialCheckOutDate || null);
 
     const handleSearch = () => {
         const searchData: SelectorData = {
@@ -34,7 +34,7 @@ const Selector: React.FC<SelectorProps> = ({
                     placeholder='Adults'
                     type="number"
                     min={0}
-                    max={10}
+                    max={100}
                     value={adults}
                     onChange={(e) => setAdults(parseInt(e.target.value))}
                     className="block w-20 xl:w-40 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none  focus:border-b-pink-500"
@@ -45,7 +45,7 @@ const Selector: React.FC<SelectorProps> = ({
                     placeholder='Children'
                     type="number"
                     min={0}
-                    max={10}
+                    max={100}
                     value={children}
                     onChange={(e) => setChildren(parseInt(e.target.value))}
                     className="block w-20 xl:w-40 px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-t-lg border-b-2 border-b-pink-500 focus:outline-none focus:border-b-pink-500"
