@@ -12,8 +12,8 @@ const Selector: React.FC<SelectorProps> = ({
     checkOutDate: initialCheckOutDate,
     onSearch,
 }) => {
-    const [adults, setAdults] = useState(initialAdults);
-    const [children, setChildren] = useState(initialChildren);
+    const [adults, setAdults] = useState<number>(initialAdults);
+    const [children, setChildren] = useState<number>(initialChildren);
     const [checkInDate, setCheckInDate] = useState<Date | null>(initialCheckInDate);
     const [checkOutDate, setCheckOutDate] = useState<Date | null>(initialCheckOutDate);
 

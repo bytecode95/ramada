@@ -1,9 +1,15 @@
 import HeroImage from "/images/HeroImg.png";
 import { HERO } from "../../constants";
 import Navbar from "../Navbar/Navbar";
+import Selector from "../shared/Selector";
+
 
 function Hero() {
   const { title, description } = HERO[0];
+  
+  const handleSearch = (searchData) => {
+    console.log("Search data:", searchData);
+  };
 
   return (
     <section className="max-width-container bg-cover bg-center relative hero-img-container" id="hero">
@@ -22,6 +28,9 @@ function Hero() {
       <div className="absolute top-[300px] 2xl:left-[16%] left-[10%] text-white md:w-[700px] 2xl:w-[825px] text-left">
         <h1 className="hero-text-main">{title}</h1>
         <p className="hero-text-description">{description}</p>
+      </div>
+      <div className="absolute top-[700px]">
+        <Selector onSearch={handleSearch} />
       </div>
     </section>
   )
