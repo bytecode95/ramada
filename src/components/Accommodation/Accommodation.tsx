@@ -4,7 +4,7 @@ import Button from "../shared/Button"
 
 function Accommodation() {
   return (
-    <section className="max-width-container">
+    <section className="max-width-container" id="accommodation">
       <div className="main-width-container padding-container">
         <div className=''>
           <header className="text-start">

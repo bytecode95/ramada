@@ -4,7 +4,7 @@ import Button from "../shared/Button";
 
 function Banquets() {
   return (
-    <section className="max-width-container">
+    <section className="max-width-container" id="banquets">
       <div className="main-width-container padding-container">
         <header>
           <h4 className="section-header-text">Banqueting</h4>

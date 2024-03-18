@@ -6,7 +6,7 @@ function Hero() {
   const { title, description } = HERO[0];
 
   return (
-    <section className="max-width-container bg-cover bg-center relative hero-img-container">
+    <section className="max-width-container bg-cover bg-center relative hero-img-container" id="hero">
       <div className="w-full">
         <img
           src={HeroImage}

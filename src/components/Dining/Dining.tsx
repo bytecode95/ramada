@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Dining() {
   return (
-    <section className="max-width-container">
+    <section className="max-width-container" id="restaurants">
       <div className="main-width-container padding-container ">
         <header className="text-start">
           <h3 className="section-header-text">Wine & Dine</h3>

@@ -2,7 +2,7 @@ import Button from "../shared/Button";
 
 function Offers() {
   return (
-    <section className="max-width-container relative">
+    <section className="max-width-container relative" id="offers">
       <div className="main-width-container padding-container">
         <div className="custom-shadow bg-white shadow-pink-500 relative">
           {/* Diagonal Line */}

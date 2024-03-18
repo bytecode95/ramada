@@ -3,7 +3,7 @@ import Button from "../shared/Button"
 
 function Deliver() {
   return (
-    <section className="max-width-container ">
+    <section className="max-width-container" id="delivery">
       <div className="main-width-container padding-container">
         <div className="flex justify-between items-center flex-wrap-reverse">
           <div className="w-full lg:w-1/2">

@@ -4,7 +4,7 @@ import Button from "../shared/Button"
 
 function Explore() {
   return (
-    <section className="max-width-container ">
+    <section className="max-width-container" id="explore">
       <div className="main-width-container padding-container">
         <h4 className="section-header-text">High Tea</h4>
         <div className="flex justify-between items-center flex-wrap-reverse">

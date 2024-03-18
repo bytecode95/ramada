@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 function About() {
   return (
-    <section className="max-width-container">
+    <section className="max-width-container" id="about">
       <div className="main-width-container padding-container">
         <div className="flex justify-between items-stretch flex-wrap-reverse">
           <div className="w-full 2xl:w-1/2">
