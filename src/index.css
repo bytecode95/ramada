@@ -53,7 +53,7 @@
   }
 
   .padding-container {
-    @apply py-[12px] md:py-[16px] 2xl:py-[80px];
+    @apply py-[40px] md:py-[60px] 2xl:py-[80px];
   }
 
   .hero-img-container {
@@ -61,7 +61,7 @@
   }
 
   .btn_nav {
-    @apply bg-pink-500 border-pink-500 px-12 py-3 text-white font-[cormorant];
+    @apply bg-pink-500 border-pink-500 px-8 py-3 2xl:px-12 2xl:py-3 text-white font-[cormorant];
   }
 
   .hero-text-main {
