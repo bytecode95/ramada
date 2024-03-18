@@ -31,6 +31,13 @@ function Navbar() {
     };
   }, []);
   
+  const scrollToFooter = () => {
+    const footerSection = document.getElementById('footer');
+    if (footerSection) {
+      footerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <nav className={`max-width-container sticky top-0 z-50 ${scrolled ? 'bg-black' : 'bg-transparent'}`}>
       <div className="main-width-container navbar-container flex justify-between items-center">
@@ -55,6 +62,7 @@ function Navbar() {
               type="button"
               title="Contact"
               variant="btn_nav"
+              handleClick={scrollToFooter} 
             />
           </div>
         </div>

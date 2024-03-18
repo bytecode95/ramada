@@ -15,7 +15,7 @@ function Footer() {
   };
 
   return (
-    <section className="max-width-container bg-black">
+    <section className="max-width-container bg-black" id="footer">
       <div className="main-width-container footer-container">
         <footer>
           <div className="flex justify-center">
