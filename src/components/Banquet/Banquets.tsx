@@ -14,10 +14,10 @@ function Banquets() {
           {BANQUETS.map((diner, index) => (
             <div key={index} className="shadow-md flex flex-col justify-between">
               <img src={diner.src} alt={diner.alt} width={448} height={305} />
-              <div className="flex flex-col justify-between p-4">
+              <div className="flex flex-col justify-between pb-6">
                 <div>
                   <h1 className="text-center text-[36px] font-bold py-4">{diner.title}</h1>
-                  <p>{diner.text}</p>
+                  <p className="h-[100px] px-4">{diner.text}</p>
                 </div>
                 <div className="flex justify-center">
                   <Button type="button" title="Learn More" variant="btn_Learn_More" icon={<BsArrowRight />} />
