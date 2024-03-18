@@ -9,7 +9,7 @@ function Testimonials() {
         <header className="text-center">
           <h3 className="section-header-text pb-20">Testimonials</h3>
         </header>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 md:gap-8">
           {FEEDBACKS.map((feedback, index) => (
             <div key={index} className="shadow-md p-8 rounded-t-[40px] rounded-r-[40px] border-[4px] border-pink-500">
               <div className="flex flex-col items-center">
