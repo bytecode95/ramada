@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { NAV_LINKS } from "../../constants";
 import Logo from "../shared/Logo";
 import Button from "../shared/Button";
